@@ -1,9 +1,12 @@
-import Image from "next/image";
+import ProjectsList from "@/components/project/ProjectsList";
 
 export default function Projects() {
   return (
-    <div className="h-screen">
-      <h1>Projects</h1>
+    <div>
+      <h1 className="uppercase">List of projects</h1>
+      <div className="mt-8">
+        <ProjectsList />
+      </div>
     </div>
   );
 }
