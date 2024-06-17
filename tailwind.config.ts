@@ -1,3 +1,4 @@
+import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -5,6 +6,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -31,10 +33,28 @@ const config: Config = {
           800: '#145136',
           900: '#0E3725',
           1000: '#082015',
+        },
+        opacityLight: {
+          5: 'rgba(208, 209, 214, 0.05)',
+          10: 'rgba(208, 209, 214, 0.1)',
+          20: 'rgba(208, 209, 214, 0.2)',
+          30: 'rgba(208, 209, 214, 0.3)',
+          60: 'rgba(208, 209, 214, 0.6)',
+          70: 'rgba(208, 209, 214, 0.7)',
+          80: 'rgba(208, 209, 214, 0.8)',
+          90: 'rgba(208, 209, 214, 0.9)',
+        },
+        opacityDark: {
+          40: 'rgba(11, 13, 19, 0.4)',
+          50: 'rgba(11, 13, 19, 0.5)',
+          60: 'rgba(11, 13, 19, 0.6)',
+          70: 'rgba(11, 13, 19, 0.7)',
+          80: 'rgba(11, 13, 19, 0.8)',
+          90: 'rgba(11, 13, 19, 0.9)',
         }
       }
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 };
 export default config;
