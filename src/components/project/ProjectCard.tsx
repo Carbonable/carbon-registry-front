@@ -5,7 +5,7 @@ import { Avatar, Chip } from "@nextui-org/react";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="rounded-lg border border-opacityLight-10 bg-opacityLight-5 px-4 py-2 flex items-center justify-start hover:bg-opacityLight-10 cursor-pointer">
+    <div className="rounded-lg border border-opacityLight-10 bg-opacityLight-5 px-4 py-3 flex items-center justify-start hover:bg-opacityLight-10 cursor-pointer">
       <div>
         <Avatar
           isBordered

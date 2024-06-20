@@ -1,0 +1,37 @@
+{
+    "carbonCredits": [
+        {
+            "id": "1",
+            "vintage": "2023",
+            "projectId": "1",
+            "quantity": 1000000,
+            "status": "retired",
+            "issuanceDate": "2024-01-01",
+            "expirationDate": "2023-01-01",
+            "serialNumber": "1234567890",
+            "usingEntity": "John Doe"
+        },
+        {
+            "id": "2",
+            "vintage": "2024",
+            "projectId": "1",
+            "quantity": 1000000,
+            "status": "confirmed",
+            "issuanceDate": "2024-01-01",
+            "expirationDate": "2024-01-01",
+            "serialNumber": "1234567890",
+            "usingEntity": "John Doe"
+        },
+        {
+            "id": "3",
+            "vintage": "2025",
+            "projectId": "1",
+            "quantity": 1000000,
+            "status": "issued",
+            "issuanceDate": "2024-01-01",
+            "expirationDate": "2025-01-01",
+            "serialNumber": "1234567890",
+            "usingEntity": "John Doe"
+        }
+    ]
+}
