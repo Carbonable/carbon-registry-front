@@ -2,10 +2,12 @@
 
 import { Project } from "@/types/project";
 import { Avatar, Chip } from "@nextui-org/react";
+import CardItem from "../common/CardItem";
+import CardValue from "../common/CardValue";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="rounded-lg border border-opacityLight-10 bg-opacityLight-5 px-4 py-3 flex items-center justify-start hover:bg-opacityLight-10 cursor-pointer">
+    <CardItem>      
       <div>
         <Avatar
           isBordered
@@ -31,40 +33,20 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
       <div className="ml-4 md:w-3/12 overflow-hidden whitespace-nowrap text-ellipsis hidden md:block">
-        <div className="font-light uppercase text-xs text-neutral-300">
-          Developed by
-        </div>
-        <div className="text-sm overflow-hidden whitespace-nowrap text-ellipsis mt-1">
-          {project.developer}
-        </div>
+        <CardValue label="Developed by" value={project.developer} />
       </div>
       <div className="ml-4 md:w-3/12 overflow-hidden whitespace-nowrap text-ellipsis hidden md:block">
-        <div className="font-light uppercase text-xs text-neutral-300">
-          Certified by
-        </div>
-        <div className="text-sm overflow-hidden whitespace-nowrap text-ellipsis mt-1">
-          {project.certifier}
-        </div>
+        <CardValue label="Certified by" value={project.certifier} />
       </div>
       <div className="ml-4 lg:w-3/12 overflow-hidden whitespace-nowrap text-ellipsis hidden lg:block">
-        <div className="font-light uppercase text-xs text-neutral-300">
-          Methodology
-        </div>
-        <div className="text-sm overflow-hidden whitespace-nowrap text-ellipsis mt-1">
-          {project.methodology}
-        </div>
+        <CardValue label="Methodology" value={project.methodology} />
       </div>
       <div className="ml-4 lg:w-3/12 overflow-hidden whitespace-nowrap text-ellipsis hidden lg:block">
-        <div className="font-light uppercase text-xs text-neutral-300">
-          Standard
-        </div>
-        <div className="text-sm overflow-hidden whitespace-nowrap text-ellipsis mt-1">
-          {project.standard}
-        </div>
+        <CardValue label="Standard" value={project.standard} />
       </div>
       <div className="text-right">
         <Chip color="success">{project.status}</Chip>
       </div>
-    </div>
+    </CardItem>
   );
 }
