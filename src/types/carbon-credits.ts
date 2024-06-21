@@ -9,3 +9,9 @@ export type CarbonCredit = {
     serialNumber: string;
     usingEntity: string;
 }
+
+export enum CarbonCreditStatus {
+    Issued = "Issued",
+    Retired = "Retired",
+    Confirmed = "Confirmed"
+}
