@@ -7,9 +7,10 @@
             "quantity": 1000000,
             "status": "Retired",
             "issuanceDate": "2024-01-01",
-            "expirationDate": "2023-01-01",
+            "retirementDate": "2023-01-01",
             "serialNumber": "1234567890",
-            "usingEntity": "John Doe"
+            "usingEntity": "John Doe",
+            "certifier": "ERS"
         },
         {
             "id": "2",
@@ -18,9 +19,10 @@
             "quantity": 1000000,
             "status": "Confirmed",
             "issuanceDate": "2024-01-01",
-            "expirationDate": "2024-01-01",
+            "retirementDate": "2024-01-01",
             "serialNumber": "1234567890",
-            "usingEntity": "John Doe"
+            "usingEntity": "John Doe",
+            "certifier": "ERS"
         },
         {
             "id": "3",
@@ -29,9 +31,10 @@
             "quantity": 1000000,
             "status": "Issued",
             "issuanceDate": "2024-01-01",
-            "expirationDate": "2025-01-01",
+            "retirementDate": "2025-01-01",
             "serialNumber": "1234567890",
-            "usingEntity": "John Doe"
+            "usingEntity": "John Doe",
+            "certifier": "ERS"
         }
     ]
 }

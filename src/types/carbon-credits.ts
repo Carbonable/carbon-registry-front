@@ -5,9 +5,10 @@ export type CarbonCredit = {
     quantity: number;
     status: string;
     issuanceDate: string;
-    expirationDate: string;
+    retirementDate: string;
     serialNumber: string;
     usingEntity: string;
+    certifier: string;
 }
 
 export enum CarbonCreditStatus {
